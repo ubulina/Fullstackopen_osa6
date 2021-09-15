@@ -19,10 +19,11 @@ export const showNotification = (text, time) => {
             type: 'SHOW_INFO',
             text
         })
-         setTimeout(() => {
+        
+        setTimeout(() => {
             dispatch(removeNotification())
         }, time)
-        
+    
     }
 }
 
